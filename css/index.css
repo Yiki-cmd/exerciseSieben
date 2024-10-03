@@ -1,0 +1,30 @@
+:root{
+    --background-dark-blue:#1a1a40; /* Dark blue */
+    --background-light-blue:#a3d5ff; /* Light blue */
+
+}
+
+body{
+    text-align: center;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    text-align: center;
+    padding: 20px;
+    background-color: var(--background-dark-blue); /* Default background: dark blue */
+    color:white;
+    border-radius: 10px;
+
+}
+
+/* Media Query: Change background color to lightblue on smaller screens */
+@media screen and (max-width:600px){
+    .container{
+        background-color:var(--background-light-blue)
+    }
+}
